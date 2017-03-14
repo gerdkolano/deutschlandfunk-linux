@@ -4,7 +4,7 @@
 1. New
 1. Repository name deutschlandfunk-linux
 1. Create repository
-    `_`
+sample code
 1. pushd /var/www/html/erprobe/deutschlandfunk
 1. git --global config credential.helper 'cache --timeout=360000'
 1. echo "# deutschlandfunk-linux" >> README.md
