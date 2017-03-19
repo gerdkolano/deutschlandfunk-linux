@@ -4,19 +4,25 @@ New
 Repository name deutschlandfunk-linux
 Create repository
 
-pushd /var/www/html/erprobe/deutschlandfunk
-echo "# deutschlandfunk-linux" >> README.md
-vim README.md
-cp -auv README.md nach-github-hochladen.txt
-git init
-git add .
-git commit -m "erstes commit"
-git config --global user.email "gerdkolano@wp.pl"
-git config --global user.name gerdkolano
-git remote add origin https://github.com/gerdkolano/deutschlandfunk-linux.git
-git push -u origin master
-
-git add .
-git commit -m "zweites commit"
-git push -u origin master
+1. https://github.com/gerdkolano?tab=repositories
+1. New
+1. Repository name deutschlandfunk-linux
+1. Create repository
+sample code
+1. pushd /var/www/html/erprobe/deutschlandfunk
+1. git config --global credential.helper 'cache --timeout=360000'
+1. echo "# deutschlandfunk-linux" >> README.md
+1. vim README.md
+1. cp -auv README.md nach-github-hochladen.txt
+1. git init
+1. git add .
+1. git commit -m "erstes commit"
+1. git config --global user.email "gerdkolano@wp.pl"
+1. git config --global user.name gerdkolano
+1. git remote add origin https://github.com/gerdkolano/deutschlandfunk-linux.git
+1. git push -u origin master
+    `_`
+1. git add .
+1. git commit -m "zweites commit"
+1. git push -u origin master
 

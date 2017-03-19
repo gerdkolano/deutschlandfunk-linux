@@ -1,4 +1,8 @@
 # deutschlandfunk-linux
+https://github.com/gerdkolano?tab=repositories
+New
+Repository name deutschlandfunk-linux
+Create repository
 
 1. https://github.com/gerdkolano?tab=repositories
 1. New
@@ -6,7 +10,7 @@
 1. Create repository
 sample code
 1. pushd /var/www/html/erprobe/deutschlandfunk
-1. git --global config credential.helper 'cache --timeout=360000'
+1. git config --global credential.helper 'cache --timeout=360000'
 1. echo "# deutschlandfunk-linux" >> README.md
 1. vim README.md
 1. cp -auv README.md nach-github-hochladen.txt
