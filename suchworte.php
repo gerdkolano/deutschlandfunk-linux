@@ -104,7 +104,7 @@ $lista = Array (
   "Lesezeit",
   "Lied- und Folkgeschichte(n)",
   "Markt und Medien komplett",
-  "Medias+res",
+  "Mediasres komplett",
   "Mitternachtskrimi",
   "Musikforum",
   "Musikjournal",
@@ -128,6 +128,7 @@ $lista = Array (
   "Umwelt und Verbraucher",
   "Wirtschaft am Mittag",
   "Wirtschaft und Gesellschaft",
+  "Wissenschaft im Brennpunkt",
   "Zur Diskussion",
   "Zwischentöne",
 	""
@@ -154,6 +155,7 @@ ein_host( "zoe.xeo", $liste);
 ein_host( "zoe.xeo", $lista);
 ein_host( "192.168.2.11", $liste);
 ein_host( "gerd.dyndns.za.net", $liste);
+ein_host( "gerd.dyndns.za.net:8080", $lista);
 
 $host = "192.168.2.11";
 echo "<h2>$host</h2>";
