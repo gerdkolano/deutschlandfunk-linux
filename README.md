@@ -22,6 +22,7 @@ sample code
 1. git remote add origin https://github.com/gerdkolano/deutschlandfunk-linux.git
 1. git push -u origin master
     `_`
+1. git config --global credential.helper 'cache --timeout=360000'
 1. git add .
 1. git commit -m "zweites commit"
 1. git push -u origin master

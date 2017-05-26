@@ -7,6 +7,25 @@
 <body>
 
 <pre>
+<!--
+#wget -O- http://www.deutschlandradio.de/unsere-streaming-adressen-im-einzelnen.3236.de.html | perl -ne 'while(m#>(http://st0[1234][^"<]*)#g){print "<a href=\"$1\" target="_blank">$1</a>\n"}' >> /var/www/html/erprobe/deutschlandfunk/suchworte.php
+-->
+<a href="http://st01.dlf.de/dlf/01/128/mp3/stream.mp3" target="_blank">http://st01.dlf.de/dlf/01/128/mp3/stream.mp3</a>
+<a href="http://st01.dlf.de/dlf/01/64/mp3/stream.mp3"  target="_blank">http://st01.dlf.de/dlf/01/64/mp3/stream.mp3</a>
+<a href="http://st01.dlf.de/dlf/01/104/ogg/stream.ogg" target="_blank">http://st01.dlf.de/dlf/01/104/ogg/stream.ogg</a>
+<a href="http://st01.dlf.de/dlf/01/56/ogg/stream.ogg"  target="_blank">http://st01.dlf.de/dlf/01/56/ogg/stream.ogg</a>
+<a href="http://st01.dlf.de/dlf/01/33/ogg/stream.ogg"  target="_blank">http://st01.dlf.de/dlf/01/33/ogg/stream.ogg</a>
+<a href="http://st02.dlf.de/dlf/02/128/mp3/stream.mp3" target="_blank">http://st02.dlf.de/dlf/02/128/mp3/stream.mp3</a>
+<a href="http://st02.dlf.de/dlf/02/64/mp3/stream.mp3"  target="_blank">http://st02.dlf.de/dlf/02/64/mp3/stream.mp3</a>
+<a href="http://st02.dlf.de/dlf/02/104/ogg/stream.ogg" target="_blank">http://st02.dlf.de/dlf/02/104/ogg/stream.ogg</a>
+<a href="http://st02.dlf.de/dlf/02/56/ogg/stream.ogg"  target="_blank">http://st02.dlf.de/dlf/02/56/ogg/stream.ogg</a>
+<a href="http://st02.dlf.de/dlf/02/33/ogg/stream.ogg"  target="_blank">http://st02.dlf.de/dlf/02/33/ogg/stream.ogg</a>
+<a href="http://st03.dlf.de/dlf/03/128/mp3/stream.mp3" target="_blank">http://st03.dlf.de/dlf/03/128/mp3/stream.mp3</a>
+<a href="http://st03.dlf.de/dlf/03/64/mp3/stream.mp3"  target="_blank">http://st03.dlf.de/dlf/03/64/mp3/stream.mp3</a>
+<a href="http://st03.dlf.de/dlf/03/104/ogg/stream.ogg" target="_blank">http://st03.dlf.de/dlf/03/104/ogg/stream.ogg</a>
+<a href="http://st03.dlf.de/dlf/03/33/ogg/stream.ogg"  target="_blank">http://st03.dlf.de/dlf/03/33/ogg/stream.ogg</a>
+<a href="http://st04.dlf.de/dlf/04/128/mp3/stream.mp3">http://st04.dlf.de/dlf/04/128/mp3/stream.mp3</a>
+<a href="http://st04.dlf.de/dlf/04/64/mp3/stream.mp3">http://st04.dlf.de/dlf/04/64/mp3/stream.mp3</a>
 ogg-Streams  Firefox spielt sie
 
 <a href="http://poznan5-4.radio.pionier.net.pl:8000/tuba10-1.mp3" target="_blank">http://poznan5-4.radio.pionier.net.pl:8000/tuba10-1.mp3</a>
@@ -123,6 +142,7 @@ $lista = Array (
   "Sport am Sonntag",
   "Sportgespräch",
   "Sprechstunde",
+  "Streitkultur",
   "Tag für Tag komplett",
   "Themen der Woche",
   "Umwelt und Verbraucher",
@@ -150,12 +170,13 @@ function ein_host ( $host, $liste) {
 }
 
 echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n";
-ein_host( "franzimint", $lista);
-ein_host( "zoe.xeo", $liste);
-ein_host( "zoe.xeo", $lista);
-ein_host( "192.168.2.11", $liste);
-ein_host( "gerd.dyndns.za.net", $liste);
-ein_host( "gerd.dyndns.za.net:8080", $lista);
+ein_host( "franzimint"               , $lista);
+ein_host( "fadi.xeo"                 , $lista);
+ein_host( "zoe.xeo"                  , $liste);
+ein_host( "zoe.xeo"                  , $lista);
+ein_host( "192.168.2.11"             , $liste);
+ein_host( "gerd.dyndns.za.net"       , $liste);
+ein_host( "gerd.dyndns.za.net:8080"  , $lista);
 
 $host = "192.168.2.11";
 echo "<h2>$host</h2>";
