@@ -27,3 +27,10 @@ sample code
 1. git commit -m "zweites commit"
 1. git push -u origin master
 
+pushd /var/www/html/erprobe/deutschlandfunk
+git add .
+git commit -m "Neue Streamingadressen"
+git config --global credential.helper 'cache --timeout=360000'
+git config --global user.email "gerdkolano@wp.pl"
+git config --global user.name gerdkolano
+git push -u origin master
